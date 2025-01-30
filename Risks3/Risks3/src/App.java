@@ -24,8 +24,15 @@ public class App {
                     break;
                 }
             }else{
-                score = score - randomNumber;
-                System.out.println("")
+                score = score - number;
+                System.out.println("You guessed it Wrong");
+                System.out.println("The number is " + randomNumber);
+                System.out.println("Score = "+ score);
+                if(score < 0){
+                    System.out.println("Oops you have lost the game");
+                 System.out.println("The number is " + randomNumber);
+                 break;
+                }
             }
             
         }
