@@ -10,8 +10,10 @@ public class App {
 
         while(score < 15){
             int randomNumber = random.nextInt(10);
+            System.out.println(randomNumber);
             System.out.println("Guess the number");
             int number = userInput.nextInt();
+            
 
             //this below checks if the number is equal to randomNumber
             if(number == randomNumber){
